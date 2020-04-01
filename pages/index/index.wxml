@@ -1,0 +1,79 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='card' id='card1'>
+        <view class='title'>
+            <image src='../../images/icons8-object.png' class='icon'></image>
+            <view>模式</view>
+        </view>
+        <view class='data'>
+            <view class="toggle toggle--neon">
+                <label class='{{single_push_class}}' data-mode='single_push' bindtap='Switch'>单推</label>
+                <label class='{{single_pull_class}}' data-mode='single_pull' bindtap='Switch'>单拉</label>
+            </view>
+        </view>
+    </view>
+
+    <view class='card' id='card2'>
+        <view class='title'>
+            <image src='../../images/icons8-ruler.png' class='icon'></image>
+            <view>针筒直径</view>
+        </view>
+        <view class='data'>
+            <input type='digit' maxlength='7' value='{{diameter}}' class='diameter-data' confirm-type='done' bindblur='getDiameter'></input>
+            <label class='diameter-unit'>mm</label>
+        </view>
+        <view class='slider-container'>
+            <slider class='diameter_slider' block-size='12' activeColor='#FE3B64' max='999.999' step='0.001' value='{{diameter}}' bindchange='diameterSliderEvent'></slider>
+        </view>
+    </view>
+
+    <view class='card' id='card3'>
+        <view class='title'>
+            <image src='../../images/icons8-test_tube.png' class='icon'></image>
+            <view>注射容量</view>
+        </view>
+        <view class='data'>
+            <input type='digit' maxlength='7' value='{{capital}}' class='diameter-data' id='capital'  bindblur='getCapital' ></input>
+            <picker id='capital-unit' mode='selector' range='{{capitalRange}}' bindchange='capitalPickerEvent'>
+                <label class='diameter-unit' id='capital-unit-label'>{{capitalUnit}}</label>
+            </picker>
+        </view>
+        <view class='slider-container' id='capital'>
+            <slider class='diameter_slider' block-size='12' activeColor='#FE3B64' max='999.999' step='0.001' value='{{capital}}' bindchange='capitalSliderEvent'></slider>
+        </view>
+    </view>
+
+    <view class='card' id='card4'>
+        <view class='title'>
+            <image src='../../images/icons8-speedometer.png' class='icon'></image>
+            <view>流速</view>
+        </view>
+        <view class='data'>
+            <input type='digit' maxlength='7' value='{{speed}}' class='diameter-data' id='speed'  bindblur='getSpeed' ></input>
+            <picker id='speed-unit' mode = 'multiSelector' range='{{speedPickerRange}}' bindchange='speedPickerEvent' >
+                <label class='diameter-unit' id='speed-unit-label'>{{speedUnit1}}/{{speedUnit2}}</label>
+            </picker>
+        </view>
+        <view class='slider-container' id='speed'>
+            <slider class='diameter_slider' block-size='12' activeColor='#FE3B64' max='{{Maxspeed}}' step='0.001' value='{{speed}}' bindchange='speedSliderEvent'></slider>
+        </view>
+    </view>
+
+    <view class='botton-group'>
+        <view class='each-botton'>
+            <sc-button raised fab size='large' bindtap='toLeft'>
+                <text class='iconfont icon-arrowleft' style='color:#FE5882 ;font-size:125rpx;'></text>
+            </sc-button>
+            <view class='tip'>校准</view>
+        </view>
+
+        <view class='each-button'>
+            <sc-button raised fab size='large' bindtap='toRight' disabled='{{runButtonDisabled}}'>
+                <text class='iconfont icon-arrowright' style='color:#FE5882 ;font-size:125rpx;'></text>
+            </sc-button>
+            <view class='tip'>确认</view>
+        </view>
+    </view>
+
+
+</view>

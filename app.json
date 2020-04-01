@@ -1,0 +1,38 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/run/run",
+        "pages/calibration/calibration"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#323232",
+        "navigationBarTitleText": "高精度可编程注射泵",
+        "navigationBarTextStyle": "white"
+    },
+    "tabBar": {
+        "color": "#FFF",
+        "selectedColor": "#FF4A4A",
+        "backgroundColor": "#323232",
+        "list": [
+            {
+                "pagePath": "pages/calibration/calibration",
+                "text": "校准",
+                "iconPath": "/images/icons8-task_completed_grey.png",
+                "selectedIconPath": "/images/icons8-task_completed.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "配置",
+                "iconPath": "/images/icons8-filter_grey.png",
+                "selectedIconPath": "/images/icons8-filter.png"
+            },
+            {
+                "pagePath": "pages/run/run",
+                "text": "运行",
+                "iconPath": "/images/icons8-time_grey.png",
+                "selectedIconPath": "/images/icons8-time.png"
+            }
+        ]
+    }
+}

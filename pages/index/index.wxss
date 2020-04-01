@@ -1,0 +1,231 @@
+/**index.wxss**/
+
+@import "../../utils/dist/sc-ui.wxss";
+@import "../../utils/dist/assets/font-icon/material.wxss";
+@font-face {
+  font-family: 'iconfont';  /* project id 1013176 */
+  src: url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.eot');
+  src: url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowright:before {
+  content: "\e7ee";
+}
+
+.icon-arrowleft:before {
+  content: "\e7ef";
+}
+
+
+page {
+    background: #606B74;
+    padding-bottom: 40rpx;
+}
+
+.card {
+    height: 290rpx;
+    width: 89%;
+    margin: 40rpx;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+    box-shadow: 7rpx 7rpx 7rpx rgba(21, 20, 41, 0.4);
+}
+
+#card1 {
+    background-color: #222222;
+}
+
+.icon {
+    height: 60rpx;
+    width: 60rpx;
+    margin-top: 2rpx;
+    margin-right: 20rpx;
+}
+
+.title {
+    padding-top: 25rpx;
+    margin-left: 30rpx;
+    display: flex;
+}
+
+.title view {
+    color: white;
+    font-size: 45rpx;
+    font-family: sans-serif;
+}
+
+.data {
+    display: flex;
+    margin-top: 25rpx;
+    margin-left: 35rpx;
+    color: white;
+}
+
+#dn-1 {
+    font-size: 80rpx;
+    font-weight: 300;
+}
+
+.neon{
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    font-family: Audiowide;
+    text-transform: uppercase;
+    font-size: 70rpx;
+    font-weight:300;
+    text-shadow:0 0 10px #fff,
+                0 0 15px #fff,
+                0 0 25px #fff,
+                0 0 40px #f90,
+                0 0 70px #f90,
+                0 0 90px #f90,
+                0 0 90px #f90;
+    color: #f1f1f1;
+}
+
+.toggle--neon {
+    width: 96%;
+    text-align: center;
+    margin-top: 25rpx;
+}
+
+.toggle--btn {
+    margin-left: 50rpx;
+    margin-right: 50rpx;
+    font-family: Audiowide;
+    text-transform: uppercase;
+    font-size: 70rpx;
+    font-weight:300;
+    color: #333;
+    text-shadow: 0 0 10px transparent,
+                 0 0 15px transparent,
+                 0 0 25px transparent,
+                 0 0 40px transparent,
+                 0 0 70px transparent,
+                 0 0 90px transparent,
+                 0 0 90px transparent;
+}
+
+#card2 {
+    background-color: #5FB5F8;
+    padding-bottom: 30rpx;
+}
+
+.diameter-data {
+    font-size: 85rpx;
+    margin-left: 10rpx;
+    margin-top: -5rpx;
+    font-weight: 300;
+    width: 340rpx;
+    height: 85rpx;
+    background-color: #609DF5;
+    text-align: center;
+    padding-bottom: 12rpx;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+}
+
+.diameter-unit {
+    font-size: 50rpx;
+    margin-left: 60rpx;
+    height: 100rpx;
+    font-weight: 500;
+    margin-top: 25rpx;
+}
+
+.diameter_slider {
+    margin-left: 50rpx;
+    margin-right: 45rpx;
+    padding-top: 18rpx;
+}
+
+.slider-container {
+    background-color: #609DF5;
+    border-radius: 10rpx;
+    -webkit-border-radius: 0rpx 0rpx 10rpx 10rpx;
+    -moz-border-radius: 10rpx;
+    height: 70rpx;
+}
+
+#card3 {
+    background-color: #52EBCA;
+}
+
+#capital {
+    background-color: #00DBCA
+}
+
+#capital-unit {
+    background-color: #00DBCA;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+    height: 68rpx;
+    width: 80rpx;
+    margin-left: 65rpx;
+    margin-top: 20rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+}
+
+#capital-unit-label {
+    margin-left: 0;
+}
+
+#card4 {
+    background-color: #FE5047
+}
+
+#speed {
+    background-color: #FF6666
+}
+
+#speed-unit {
+    background-color: #FF6666;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+    height: 68rpx;
+    width: 180rpx;
+    margin-left: 65rpx;
+    margin-top: 25rpx;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+}
+
+#speed-unit-label {
+    margin-left: 0;
+}
+
+.arrow-left {
+    padding-top: 50rpx;
+}
+
+.tip{
+    color: white;
+    margin-left: 75rpx;
+    margin-top: 10rpx;
+    font-size: 30rpx;
+}
+
+.botton-group {
+    display: flex; 
+    justify-content:space-between;
+    align-items: center;
+    margin: 100rpx;
+    margin-bottom: 60rpx;
+}

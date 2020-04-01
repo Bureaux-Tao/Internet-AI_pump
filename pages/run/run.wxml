@@ -1,0 +1,88 @@
+<!--pages/run/run.wxml-->
+<view>
+    <!-- <view class='container-pb'>
+        
+    </view> -->
+    <sc-cell-group>
+        <sc-cell sc-class='container-pb'>
+            <canvas-ring id="canvasRing" canvasWidth='{{vary_width}}' value="{{showRing}}" title='已注射了' lineWidth='6' lineColor='#FF4581' valueColor='{{warningFont}}'></canvas-ring>
+        </sc-cell>
+    </sc-cell-group>
+
+    <view class='botton-group'>
+        <view class='each-botton'>
+            <sc-button raised fab size='middle' bindtap='run' disabled='{{canRun}}'>
+                <text class='iconfont icon-icons-start' style='color:#FE5882 ;font-size:105rpx;'></text>
+            </sc-button>
+            <view class='tip'>运行</view>
+        </view>
+
+        <view class='each-button'>
+            <sc-button raised fab size='middle' bindtap='pause' disabled='{{canPause}}'>
+                <text class='iconfont icon-pause' style='color:#FE5882 ;font-size:105rpx;'></text>
+            </sc-button>
+            <view class='tip'>暂停</view>
+        </view>
+
+        <view class='each-button'>
+            <sc-button raised fab size='middle' bindtap='back'>
+                <text class='iconfont icon-arrowleft' style='color:#FE5882 ;font-size:105rpx;'></text>
+            </sc-button>
+            <view class='tip'>返回</view>
+        </view>
+    </view>
+
+    <sc-cell-group sc-class='cell-group'>
+        <sc-cell left-icon=' iconfont icon-compass-fill'>
+            {{mode[1]}}
+            <text slot="righttext">方向</text>
+        </sc-cell>
+        <sc-cell left-icon=' iconfont icon-control-fill'>
+            {{runningSecondsString}}
+            <text slot="righttext">运行时间</text>
+        </sc-cell>
+        <sc-cell left-icon=' iconfont icon-warning-circle-fill'>
+            {{remainingSecondsString}}
+            <text slot="righttext">剩余时间</text>
+        </sc-cell>
+        <sc-cell left-icon=' iconfont icon-alert-fill'>
+            {{state}}
+            <text slot="righttext">运行状态</text>
+        </sc-cell>
+    </sc-cell-group>
+
+    <sc-cell-group sc-class='cell-group'>
+        <sc-cell left-icon='iconfont icon-filter-fill'>
+            <text>{{capital}} {{capitalUnit}}</text>
+            <text slot="righttext">总容量</text>
+        </sc-cell>
+        <sc-cell left-icon='iconfont icon-funnelplot-fill'>
+            {{remain}}
+            <text slot="righttext">剩余容量</text>
+        </sc-cell>
+        <sc-cell left-icon=' iconfont icon-experiment-fill'>
+                {{hasShot}}
+                <text slot="righttext">已注射容量</text>
+        </sc-cell>
+    </sc-cell-group>
+
+    <sc-cell-group sc-class='cell-group'>
+        <sc-cell left-icon=' iconfont icon-sliders-fill'>
+            {{mode}}
+            <text slot="righttext">模式</text>
+        </sc-cell>
+        <sc-cell left-icon=' iconfont icon-dashboard-fill'>
+            {{speed}} {{speedUnit1}}/{{speedUnit2}}
+            <text slot="righttext">流速</text>
+        </sc-cell>
+        <sc-cell left-icon=' iconfont icon-time-circle-fill'>
+            {{totalTimeString}}
+            <text slot="righttext">时间</text>
+        </sc-cell>
+        <sc-cell left-icon=' iconfont icon-boxplot-fill'>
+            {{diameter}} mm
+            <text slot="righttext">注射器内径</text>
+        </sc-cell>
+    </sc-cell-group>
+
+</view>

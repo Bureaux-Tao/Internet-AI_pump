@@ -1,0 +1,49 @@
+<!--pages/calibration/calibration.wxml-->
+<view class='container'>
+    <view class='card' id='card1'>
+        <view class='title'>
+            <image src='../../images/icons8-volume.png' class='icon'></image>
+            <view>预设容量</view>
+        </view>
+        <view class='data'>
+            <input type='digit' maxlength='7' value='{{first}}' class='first-data' confirm-type='done' bindblur='getfirst'></input>
+            <label class='first-unit'>mL</label>
+        </view>
+        <view class='slider-container'>
+            <slider class='first_slider' block-size='12' activeColor='#FE3B64' max='999.999' step='0.001' value='{{first}}' bindchange='firstSliderEvent'></slider>
+        </view>
+    </view>
+
+    <view class='card' id='card2'>
+        <view class='title'>
+            <image src='../../images/icons8-weight.png' class='icon'></image>
+            <view>称重量</view>
+        </view>
+        <view class='data'>
+            <input type='digit' maxlength='7' value='{{second}}' class='second-data' confirm-type='done' bindblur='getsecond'></input>
+            <label class='second-unit'>g</label>
+        </view>
+        <view class='slider-container-2'>
+            <slider class='second_slider' block-size='12' activeColor='#FE3B64' max='999.999' step='0.001' value='{{second}}' bindchange='secondSliderEvent'></slider>
+        </view>
+    </view>
+
+    <view class='card' id='card3'>
+        <view class='title'>
+            <image src='../../images/icons8-mu.png' class='icon'></image>
+            <view>校准系数</view>
+        </view>
+        <view class='data'>
+            <label class='factor'>{{coefficient}}</label>
+        </view>
+    </view>
+
+    <view class='each-button'>
+            <sc-button raised fab size='large' bindtap='toRight' disabled='{{runButtonDisabled}}'>
+                <text class='iconfont icon-arrowright' style='color:#FE5882 ;font-size:125rpx;'></text>
+            </sc-button>
+            <view class='tip'>确认</view>
+        </view>
+</view>
+
+<sc-snackbar id="snackbar">这是一个snackbar</sc-snackbar>

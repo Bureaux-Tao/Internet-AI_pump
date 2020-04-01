@@ -1,0 +1,219 @@
+/* pages/calibration/calibration.wxss */
+
+@import "../../utils/dist/sc-ui.wxss";
+@import "../../utils/dist/assets/font-icon/material.wxss";
+@font-face {
+  font-family: 'iconfont';  /* project id 1013176 */
+  src: url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.eot');
+  src: url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1013176_7kzijcyqnh4.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrowright:before {
+  content: "\e7ee";
+}
+
+.icon-arrowleft:before {
+  content: "\e7ef";
+}
+
+
+page {
+    background: #606B74;
+    color: white;
+    padding-bottom: 40rpx;
+}
+
+.card {
+    height: 290rpx;
+    width: 89%;
+    margin: 40rpx;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+    box-shadow: 7rpx 7rpx 7rpx rgba(21, 20, 41, 0.4);
+}
+
+.icon {
+    height: 60rpx;
+    width: 60rpx;
+    margin-top: 2rpx;
+    margin-right: 20rpx;
+}
+
+.title {
+    padding-top: 25rpx;
+    margin-left: 30rpx;
+    display: flex;
+}
+
+.title view {
+    color: white;
+    font-size: 45rpx;
+    font-family: sans-serif;
+}
+
+.data {
+    display: flex;
+    margin-top: 25rpx;
+    margin-left: 35rpx;
+    color: white;
+}
+
+#card1 {
+    background-color: #FBBC05;
+    padding-bottom: 30rpx;
+}
+
+.first-data {
+    font-size: 85rpx;
+    margin-left: 10rpx;
+    margin-top: -5rpx;
+    font-weight: 300;
+    width: 340rpx;
+    height: 85rpx;
+    background-color: #FFA600;
+    text-align: center;
+    padding-bottom: 12rpx;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+}
+
+.first-unit {
+    font-size: 50rpx;
+    margin-left: 60rpx;
+    height: 100rpx;
+    font-weight: 500;
+    margin-top: 25rpx;
+}
+
+.first_slider {
+    margin-left: 50rpx;
+    margin-right: 45rpx;
+    padding-top: 18rpx;
+}
+
+.slider-container {
+    background-color: #FFA600;
+    border-radius: 10rpx;
+    -webkit-border-radius: 0rpx 0rpx 10rpx 10rpx;
+    -moz-border-radius: 10rpx;
+    height: 70rpx;
+}
+
+#card2 {
+    background-color: #7CE8E2;
+    padding-bottom: 30rpx;
+}
+
+.second-data {
+    font-size: 85rpx;
+    margin-left: 10rpx;
+    margin-top: -5rpx;
+    font-weight: 300;
+    width: 340rpx;
+    height: 85rpx;
+    background-color: #2CD5ED;
+    text-align: center;
+    padding-bottom: 12rpx;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+}
+
+.second-unit {
+    font-size: 50rpx;
+    margin-left: 60rpx;
+    height: 100rpx;
+    font-weight: 500;
+    margin-top: 25rpx;
+}
+
+.second_slider {
+    margin-left: 50rpx;
+    margin-right: 45rpx;
+    padding-top: 18rpx;
+}
+
+.slider-container-2 {
+    background-color:#2CD5ED;
+    border-radius: 10rpx;
+    -webkit-border-radius: 0rpx 0rpx 10rpx 10rpx;
+    -moz-border-radius: 10rpx;
+    height: 70rpx;
+}
+
+#card3 {
+    background-color: #00C44D;
+    padding-bottom: 30rpx;
+}
+
+.third-data {
+    font-size: 85rpx;
+    margin-left: 10rpx;
+    margin-top: -5rpx;
+    font-weight: 300;
+    width: 340rpx;
+    height: 85rpx;
+    text-align: center;
+    padding-bottom: 12rpx;
+    border-radius: 10rpx;
+    -webkit-border-radius: 10rpx;
+    -moz-border-radius: 10rpx;
+}
+
+.third-unit {
+    font-size: 50rpx;
+    margin-left: 60rpx;
+    height: 100rpx;
+    font-weight: 500;
+    margin-top: 25rpx;
+}
+
+.third_slider {
+    margin-left: 50rpx;
+    margin-right: 45rpx;
+    padding-top: 18rpx;
+}
+
+.slider-container-3 {
+    border-radius: 10rpx;
+    -webkit-border-radius: 0rpx 0rpx 10rpx 10rpx;
+    -moz-border-radius: 10rpx;
+    height: 70rpx;
+}
+
+.tip{
+    color: white;
+    /* margin-left: 75rpx; */
+    margin-top: 10rpx;
+    font-size: 30rpx;
+}
+
+.each-button {
+    display: flex; 
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin: 100rpx;
+    margin-bottom: 60rpx;
+}
+
+.factor {
+    font-size: 95rpx;
+    font-weight: 300;
+    margin-top: 10rpx;
+    margin-left: 20rpx;
+}
